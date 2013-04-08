@@ -7,4 +7,9 @@
     "jade": "*",
     "stylus": "*"
   }
+  , "devDependencies": {
+      "mocha": "1.7.0"
+    , "should": "1.2.1"
+    , "supertest": "0.4.0"
+  }
 }
