@@ -1,7 +1,10 @@
-var foo = 'bar'
+var request = require('supertest')
+  , app = require(__dirname + '/../app')
 
-describe('foo variable', function () {
-  it('should equal bar', function () {
-    foo.should.equal('bar')
+describe('GET /', function () {
+  it('should contain text "Hello, Express!"', function (done) {
+     request(app)
+       .get('/')
+       .expect(/Hello, Express!/, done)
   })
 })

@@ -1,7 +1,16 @@
+var app = require(__dirname + '/app')
+  , port = process.env.PORT || 3000
+  , host = process.env.IP;
+
+app.listen(port, host, function () {
+  console.log('Listening on port ', port)
+})
+
+
 /**
  * Module dependencies.
  */
-var express = require('express'),
+/*var express = require('express'),
     routes = require('./routes'),
     user = require('./routes/user'),
     http = require('http'),
@@ -37,3 +46,4 @@ http.createServer(app).listen(app.get('port'), app.get('host'),
   function(){
     console.log('Express server listening on port ' + app.get('port'));
   });
+*/

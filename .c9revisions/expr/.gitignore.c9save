@@ -1,0 +1,2 @@
+{"ts":1366459887907,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"node_modules\n"]],"start1":0,"start2":0,"length1":0,"length2":13}]],"length":13}
+{"contributors":[],"silentsave":false,"ts":1366459903334,"patch":[[{"diffs":[[0,"modules\n"],[1,"app-cov\ncoverage.html\n"]],"start1":5,"start2":5,"length1":8,"length2":30}]],"length":35,"saved":false}
