@@ -2,6 +2,7 @@ var express = require('express')
   , ejsLocals = require('ejs-locals')
   , app = express()
   , pages = require(__dirname + '/../controllers/pages')
+  , menu = require(__dirname + '/../app/menu')
 
 // configuration settings 
 app.engine('ejs', ejsLocals)
@@ -12,6 +13,7 @@ app.use(express.static(__dirname + '/../public'))
 // set view locals
 app.use(function (req, res, next) {
   app.locals.route = req.url
+  app.locals.menu = menu
   next()
 })
 

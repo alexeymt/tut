@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <title><%= title %></title>
@@ -23,15 +23,25 @@
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
-        <a class="brand" href="/">Node.js demo app</a>
+        <a class="brand" href="/">Грузоперевозки</a>
         <div class="nav-collapse collapse">
           <ul class="nav">
-            <li class="<%= route == '/home' && 'active' || '' %>"><a href="/home">Home</a></li>
-            <li class="<%= route == '/about' && 'active' || '' %>"><a href="/about">About</a></li>
+            <% for(var i=0; i<menu.items.length; i++) { %>
+              <li class="<%= route == '/'+menu.items[i].href && 'active' || '' %>">
+                <a href="/<%= menu.items[i].href %>">
+                  <%= menu.items[i].title %>
+                </a>
+              </li>
+            <% } %>
           </ul>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="row-fluid">
+    <div class="span4">Left</div>
+    <div class="span8">Right</div>
   </div>
 
   <div class="container">
