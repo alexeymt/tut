@@ -7,7 +7,7 @@ var express = require('express')
 app.engine('ejs', ejsLocals)
 app.set('views', __dirname + '/../views')
 app.set('view engine', 'ejs')
-app.use(express.static(__dirname + '/public'))
+app.use(express.static(__dirname + '/../public'))
 
 // set view locals
 app.use(function (req, res, next) {
