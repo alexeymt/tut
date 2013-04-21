@@ -4,3 +4,9 @@ res.render('pages/home', {
     , message: 'This is the "home" action of "pages" controller'
   })
 }
+exports.about = function (req, res) {
+res.render('pages/about', {
+      title: 'About page'
+    , message: 'This is the "about" action of "pages" controller'
+  })
+}
