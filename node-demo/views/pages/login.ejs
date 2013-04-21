@@ -1,0 +1,7 @@
+<% layout('../layout') -%>
+<h1><%= title %></h1>
+<form method="post" action="/auth">
+    <input type="text" name="user[name]" />
+    <input type="text" name="user[password]" />
+    <input type="submit" value="Submit" />
+</form>

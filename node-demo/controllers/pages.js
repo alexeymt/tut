@@ -10,3 +10,15 @@ exports.about = function (req, res) {
     , message: 'This is the "about" action of "pages" controller'
   })
 }
+exports.account = function (req, res) {
+  res.render('pages/account', {
+      title: 'Account'
+    , message: req.user
+  })
+}
+exports.login = function (req, res) {
+  res.render('pages/login', {
+      title: 'Login'
+  })
+}
+

@@ -6,6 +6,12 @@
       "express": "3.0.x"
     , "ejs": "0.8.3"
     , "ejs-locals": "0.2.5"
+    , "passport": "latest"
+    , "passport-local": "latest"
+    , "passport-facebook": "latest"
+    , "passport-twitter": "latest"
+    , "passport-google-oauth": "latest"
+    , "connect-ensure-login": "latest"
   }  
   , "devDependencies": {
       "mocha": "1.7.0"

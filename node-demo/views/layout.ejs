@@ -26,13 +26,13 @@
         <a class="brand" href="/">Грузоперевозки</a>
         <div class="nav-collapse collapse">
           <ul class="nav">
-            <% for(var i=0; i<menu.items.length; i++) { %>
-              <li class="<%= route == '/'+menu.items[i].href && 'active' || '' %>">
-                <a href="/<%= menu.items[i].href %>">
-                  <%= menu.items[i].title %>
-                </a>
-              </li>
-            <% } %>
+              <% for(var i=0; i<menu.items.length; i++) { %>
+                <li class="<%= route == '/'+menu.items[i].href && 'active' || '' %>">
+                  <a href="/<%= menu.items[i].href %>">
+                    <%= menu.items[i].title %>
+                  </a>
+                </li>
+              <% } %>
           </ul>
         </div>
       </div>

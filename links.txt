@@ -1,1 +1,11 @@
 express: http://habrahabr.ru/post/158185/
+
+Web разработка на node.js и express 
+https://github.com/DavidKlassen/node-tutorial/wiki/Web-разработка-на-node.js-и-express
+
+http://habrahabr.ru/post/138629/
+
+passport: http://passportjs.org/guide/
+http://blog.nodeknockout.com/post/34765538605/getting-started-with-passport
+
+Фреймворк Express - руководство пользователя http://jsman.ru/express/
